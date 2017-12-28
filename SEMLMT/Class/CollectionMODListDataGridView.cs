@@ -9,7 +9,12 @@ namespace SEMLMT.Class
 {
     public class CollectionMODListDataGridView : DataGridView
     {
+        public CollectionMODListDataGridView()
+        {
+            this.ReadOnly = true;
 
+
+        }
 
 
 

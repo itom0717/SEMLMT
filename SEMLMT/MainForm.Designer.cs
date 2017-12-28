@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CollectionMODListDataGridView = new SEMLMT.Class.CollectionMODListDataGridView();
             this.GetCollectionMODListButton = new System.Windows.Forms.Button();
             this.CollectionIDTextBox = new System.Windows.Forms.TextBox();
             this.CollectionIDLabel = new System.Windows.Forms.Label();
             this.CloseButton = new System.Windows.Forms.Button();
-            this.CollectionMODListDataGridView = new SEMLMT.Class.CollectionMODListDataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CollectionMODListDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -49,10 +49,23 @@
             this.groupBox1.Controls.Add(this.CollectionIDLabel);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(526, 186);
+            this.groupBox1.Size = new System.Drawing.Size(526, 200);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "コレクションからMOD一覧を取得";
+            // 
+            // CollectionMODListDataGridView
+            // 
+            this.CollectionMODListDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CollectionMODListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CollectionMODListDataGridView.Location = new System.Drawing.Point(8, 47);
+            this.CollectionMODListDataGridView.Name = "CollectionMODListDataGridView";
+            this.CollectionMODListDataGridView.ReadOnly = true;
+            this.CollectionMODListDataGridView.RowTemplate.Height = 21;
+            this.CollectionMODListDataGridView.Size = new System.Drawing.Size(503, 147);
+            this.CollectionMODListDataGridView.TabIndex = 3;
             // 
             // GetCollectionMODListButton
             // 
@@ -83,7 +96,7 @@
             // CloseButton
             // 
             this.CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseButton.Location = new System.Drawing.Point(466, 215);
+            this.CloseButton.Location = new System.Drawing.Point(466, 229);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(72, 27);
             this.CloseButton.TabIndex = 2;
@@ -91,23 +104,11 @@
             this.CloseButton.UseVisualStyleBackColor = true;
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
-            // CollectionMODListDataGridView
-            // 
-            this.CollectionMODListDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CollectionMODListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CollectionMODListDataGridView.Location = new System.Drawing.Point(8, 47);
-            this.CollectionMODListDataGridView.Name = "CollectionMODListDataGridView";
-            this.CollectionMODListDataGridView.RowTemplate.Height = 21;
-            this.CollectionMODListDataGridView.Size = new System.Drawing.Size(503, 133);
-            this.CollectionMODListDataGridView.TabIndex = 3;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 254);
+            this.ClientSize = new System.Drawing.Size(550, 268);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.groupBox1);
             this.Name = "MainForm";
